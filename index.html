@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation Demo</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <div class="pref-form">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">green</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <button id="savePref">Save Preferences</button>
+            </div>
+        </div>
+        
+        <div class="animation-area">
+            <h2>Interactive Animation</h2>
+            <div class="animated-box" id="animBox"></div>
+            <button id="animateBtn">Trigger Animation</button>
+            <button id="bounceBtn">Bounce Effect</button>
+        </div>
+        
+        <div class="transition-demo">
+            <h2>CSS Transitions</h2>
+            <button class="transition-btn">Hover Me!</button>
+            <div class="transition-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

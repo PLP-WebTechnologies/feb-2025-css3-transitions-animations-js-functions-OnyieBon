@@ -1,0 +1,160 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Theme styles */
+.light {
+    background-color: #d5d83b;
+    color: #c22222;
+}
+
+.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+/* Transition demo */
+.transition-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.transition-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+    margin-top: 20px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.transition-box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #ff8e8e;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+/* Animation demo */
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+        background-color: #e74c3c;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-25px);
+    }
+}
+
+.slide-animation {
+    animation: slide 2s ease-in-out;
+}
+
+.bounce-animation {
+    animation: bounce 1s ease;
+}
+
+/* Preferences section */
+.preferences {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pref-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pref-form select, .pref-form button {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.pref-form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pref-form button:hover {
+    background-color: #2980b9;
+}
+
+.animation-area {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.animation-area button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.animation-area button:hover {
+    background-color: #8e44ad;
+    transform: translateY(-2px);
+}
